@@ -122,7 +122,7 @@ int main(void)
     i += p;
     if (i >= 250)
       p = -1;
-    if (i <= 50)
+    if (i <= 51)
       p = 1;
     HAL_Delay (10);
   }

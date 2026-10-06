@@ -124,7 +124,7 @@ int main(void)
       p = -1;
     if (i <= 50)
       p = 1;
-    HAL_Delay (10);
+    HAL_Delay (11);
   }
   /* USER CODE END 3 */
 

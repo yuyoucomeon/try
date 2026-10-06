@@ -114,7 +114,7 @@ int main(void)
 
     /* USER CODE BEGIN 3 */
 
-    // MPU6050_Read_All(&hi2c1, &MPU6050);
+    MPU6050_Read_All(&hi2c1, &MPU6050);
     // HAL_Delay (100);
     // pI = (MPU6050.KalmanAngleX - agX) / 180 * 200 + 150;
     // __HAL_TIM_SET_COMPARE(&htim3, TIM_CHANNEL_1, pI);
@@ -122,7 +122,7 @@ int main(void)
     i += p;
     if (i >= 250)
       p = -1;
-    if (i <= 51)
+    if (i <= 50)
       p = 1;
     HAL_Delay (10);
   }
